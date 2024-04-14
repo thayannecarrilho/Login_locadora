@@ -54,11 +54,13 @@ module.exports = class loginController{
       } else if (email == '' || senha == '' || login == undefined) {
         console.log("Sem cadastro")
         res.redirect("/")
-      }
-    })      
-  }
+      }})   
+    }
 
-  static editlogin(req, res){
+
+    /* Incluir parametro nas views (Home, Edit) para fazer um req.body*/
+    
+    static editlogin(req, res){
     const email = req.params.email
         login.findOne({ where: {email: email}, raw:true})
         .then((data) => {
