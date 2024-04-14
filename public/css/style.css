@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+}
+body html{
+
+}
+
+.navbar{
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+#login{
+    margin-top: 5rem;
+}
+img{
+    height: 6rem;
+}
+.card-body{
+    background-color: #ccc;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 2rem;
+    border-right: 2px solid #393535;
+    border-bottom: 2px solid #393535;
+    margin: auto;
+}
+.form-group{
+    margin: 1rem 0;
+}
+#cadastro,
+#edit{
+    margin-top: 4rem;
+}
+#home{
+    margin-top: 7rem;
+}
+#home a{
+    margin: 1rem;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;    
+}

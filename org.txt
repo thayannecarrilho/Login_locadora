@@ -1,5 +1,4 @@
 FALTA
-- CONTROLLERS
-- ROTAS
-- ESTILIZAR TODAS AS VIEWS (CSS)
-- JS NO EJS
+Incluir parametro (email hidden) nas views (Home, Edit) para fazer um req.body
+Terminar rotas de Edit, Update e voltar, utilizar o session
+Falta rota/controller do logout

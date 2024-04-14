@@ -13,35 +13,48 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="container text-center" id="login">
-      <form method="post" action="/login" class="card-body">
+    <div class="container text-center" id="edit">
+      <form method="POST" action="/update" class="card-body">
         <div class="form-group">
-          <img src="/img/logo.png" />
+          <input
+          class="form-control"
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            autocomplete="off"
+            value= ""
+          />
         </div>
         <div class="form-group">
           <input
-            class="form-control"
-            id="email"
+          class="form-control"
             type="email"
             name="email"
             placeholder="Email"
             autocomplete="off"
             id="email"
+            onclick="erro()"
+            value= ""
           />
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="password" name="senha" placeholder="Senha" id="senha" value="" />
         </div>
         <div class="form-group">
           <input
-            class="form-control"
+          class="form-control"
             type="password"
-            name="senha"
-            placeholder="Senha"
-            id="senha"
+            name="confisenha"
+            placeholder="Confirmar Senha"
+            id="confisenha"
+            value=""
           />
         </div>
         <div class="form-group">
-          <button class="btn btn-dark" id="btn">Entrar</button>
+          <input type="submit" class="btn btn-dark" value="Atualizar">
         </div>
-        <p>Ainda não tem uma conta?<a href="/cadastro">Cadastre-se</a></p>
+        <a class="btn btn-dark" href="/home">voltar</a>
+        </div>
       </form>
     </div>
     <div class="footer text-center">
